@@ -7,7 +7,11 @@ use Illuminate\Http\Request;
 
 class HomePageController
 {
-    public function home(){
+    public function home()
+    {
+
+
+        return view('home');
 
     }
 }
