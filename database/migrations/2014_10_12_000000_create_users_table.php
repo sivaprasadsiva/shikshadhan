@@ -19,12 +19,11 @@ return new class extends Migration
             $table->string('password');
             $table->string('mobile_number')->nullable()->unique();
             $table->rememberToken();
-            $table->timestamps('created_on');
             $table->string('created_by');
-            $table->timestamps('updated_on');
             $table->string('updated_by');
             $table->string('deleted');
             $table->string('is_active');
+            $table->timestamps();
         });
     }
 
