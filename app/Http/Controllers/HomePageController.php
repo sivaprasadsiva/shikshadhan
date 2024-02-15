@@ -10,6 +10,8 @@ class HomePageController
     public function home()
     {
 
+
         return view('home');
+
     }
 }
