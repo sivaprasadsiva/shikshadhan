@@ -4,43 +4,35 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Rubik:300,400,500,700,900');
 
 
-/* The Modal (background) */
+/* pop up start */
+
 .modal {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
     padding-top: 100px;
-    /* Location of the box */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     overflow: auto;
-    /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
-    /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
+
 }
 
-/* Modal Content */
+
 .modal-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
+    padding: 30px 20px;
     width: fit-content;
-    top: 20%;
+    top: 15%;
     width: 50%;
     text-align: center;
 }
 
-/* The Close Button */
+
 .close {
     color: #aaaaaa;
     text-align: end;
@@ -55,25 +47,38 @@
     cursor: pointer;
 }
 
-.input-field {
-    display: block;
-
-    input {
-        padding: 12px;
-        width: 70%;
-        margin: 10px 0px;
-    }
+input {
+    width: 50%;
+    padding: 10px;
+    margin: 12px 0px;
+    border-radius: 10px;
+    border: 1px solid grey;
 }
 
 .login-btn {
-    width: 20%;
-    padding: 8px;
-    background-color: #083758;
-    color: #fff;
-    border: none;
+
+    button {
+        width: 20%;
+        padding: 8px;
+        border-radius: 20px;
+        background-color: transparent;
+        border-color: #E60023;
+        color: #E60023;
+        border: 1px solid #E60023;
+    }
+
+    p {
+        margin-top: 12px;
+    }
+
+
 }
 
-.login-btn:hover {
-    transition: .8s;
-    background-color: #4aacf1;
-}
+
+
+
+
+
+
+
+/* pop up end */
