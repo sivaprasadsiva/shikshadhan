@@ -4,283 +4,130 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Shikshadhan</title>
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-	<link rel="stylesheet" href="{{ asset('css/main.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/home.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/login.css') }}">
+	<!-- Include Montserrat font family -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+	<!-- Include Bootstrap Icons CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 
 <body>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-	<div class="super_container">
-
-		<!-- Header -->
-
-		<div class="header ">
-			<!-- Header Main -->
-
-			<div class="main_nav">
-				<div class="container">
-					<div class="row">
-
-						<!-- Logo -->
-						<div class="col-lg-4 col-sm-12 col-md-4">
-							<div class="logo_container">
-								<div class="logo"><a href="#">Shikshadhan</a></div>
-							</div>
-						</div>
-						<div class="col-lg-8 col-md-8 col-12">
-							<div class="main_nav_menu">
-								<ul class="standard_dropdown main_nav_dropdown">
-									<li><a href="#">Home<i class="fas fa-chevron-down"></i></a></li>
-									<li><a href="#">Services<i class="fas fa-chevron-down"></i></a></li>
-									<li><a href="#">Contact Us<i class="fas fa-chevron-down"></i></a></li>
-									<li><a href="#">About us<i class="fas fa-chevron-down"></i></a></li>
-									<li>
-										<div class="user_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg" alt=""></div>
-									</li>
-
-								</ul>
-							</div>
-						</div>
-						<!-- Wishlist -->
-						<!-- <div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
-
-
-							<div class="user_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg" alt=""></div>
-							<div class="wishlist_content">
-								<div class="wishlist_text"><a href="#" id="loginDialogBtn">Register / Login</a></div>
-							</div>
-						</div> -->
-					</div>
-				</div>
+	<header>
+		<div class="header transparent-card row">
+			<div class="col-md-4 col-sm-12 col-lg-5 responsive-header">
+				<i class="bi bi-list menu-icon" id="menu-icon"></i>
+				<h2>Shikshadhan</h2>
+			</div>
+			<div class="col-md-8 col-sm-12 col-lg-7">
+				<ul class="header-list">
+					<li>Home </li>
+					<li>Courses </li>
+					<li>About Us </li>
+					<li>Contact us </li>
+					<li><i class="bi bi-person-circle profile-icon" id="profile-icon"></i></li>
+				</ul>
 			</div>
 		</div>
-	</div>
-
-	<!-- Main Navigation -->
-
-	<!-- <nav class="main_nav">
-				<div class="container">
-					<div class="row">
-						<div class="col">
-
-							<div class="main_nav_content d-flex flex-row"> -->
-
-	<!-- Categories Menu -->
-	<!-- Main Nav Menu -->
-
-	<!-- <div class="main_nav_menu">
-									<ul class="standard_dropdown main_nav_dropdown">
-										<li><a href="#">Home<i class="fas fa-chevron-down"></i></a></li>
-										<li class="hassubs">
-											<a href="#">Laptop<i class="fas fa-chevron-down"></i></a>
-											<ul>
-												<li>
-													<a href="#">Lenovo<i class="fas fa-chevron-down"></i></a>
-													<ul>
-														<li><a href="#">Lenovo 1<i class="fas fa-chevron-down"></i></a></li>
-														<li><a href="#">Lenovo 3<i class="fas fa-chevron-down"></i></a></li>
-														<li><a href="#">Lenovo 2<i class="fas fa-chevron-down"></i></a></li>
-													</ul>
-												</li>
-												<li><a href="#">DELL<i class="fas fa-chevron-down"></i></a></li>
-												<li><a href="#">APPLE<i class="fas fa-chevron-down"></i></a></li>
-												<li><a href="#">HP<i class="fas fa-chevron-down"></i></a></li>
-											</ul>
-										</li>
-										<li class="hassubs">
-											<a href="#">Featured Brands<i class="fas fa-chevron-down"></i></a>
-											<ul>
-												<li>
-													<a href="#">APPLE<i class="fas fa-chevron-down"></i></a>
-													<ul>
-														<li><a href="#">Laptop<i class="fas fa-chevron-down"></i></a></li>
-														<li><a href="#">Mobiles<i class="fas fa-chevron-down"></i></a></li>
-														<li><a href="#">Ipads<i class="fas fa-chevron-down"></i></a></li>
-													</ul>
-												</li>
-												<li><a href="#">Samsung<i class="fas fa-chevron-down"></i></a></li>
-												<li><a href="#">Lenovo<i class="fas fa-chevron-down"></i></a></li>
-												<li><a href="#">DELL<i class="fas fa-chevron-down"></i></a></li>
-											</ul>
-										</li>
-										<li class="hassubs">
-											<a href="#">Pages<i class="fas fa-chevron-down"></i></a>
-											<ul>
-												<li><a href="shop.html">Shop<i class="fas fa-chevron-down"></i></a></li>
-												<li><a href="product.html">Product<i class="fas fa-chevron-down"></i></a></li>
-												<li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
-												<li><a href="blog_single.html">Blog Post<i class="fas fa-chevron-down"></i></a></li>
-												<li><a href="regular.html">Regular Post<i class="fas fa-chevron-down"></i></a></li>
-												<li><a href="cart.html">Cart<i class="fas fa-chevron-down"></i></a></li>
-												<li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
-											</ul>
-										</li>
-										<li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
-										<li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
-									</ul>
-								</div> -->
-
-	<!-- Menu Trigger -->
-
-	<div class="menu_trigger_container ml-auto">
-		<div class="menu_trigger d-flex flex-row align-items-center justify-content-end">
-			<div class="menu_burger">
-				<div class="menu_trigger_text">menu</div>
-				<div class="cat_burger menu_burger_inner"><span></span><span></span><span></span></div>
-			</div>
-		</div>
-	</div>
-
-	<!-- </div>
-						</div>
-					</div>
-				</div>
-			</nav> -->
-
-	<!-- Menu -->
-
-	<div class="page_menu">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="page_menu_content">
-						<div class="page_menu_search">
-							<form action="#">
-								<input type="search" required="required" class="page_menu_search_input" placeholder="Search for products...">
-							</form>
-						</div>
-						<ul class="page_menu_nav">
-							<li class="page_menu_item has-children">
-								<a href="#">Language<i class="fa fa-angle-down"></i></a>
-								<ul class="page_menu_selection">
-									<li><a href="#">English<i class="fa fa-angle-down"></i></a></li>
-									<li><a href="#">Italian<i class="fa fa-angle-down"></i></a></li>
-									<li><a href="#">Spanish<i class="fa fa-angle-down"></i></a></li>
-									<li><a href="#">Japanese<i class="fa fa-angle-down"></i></a></li>
-								</ul>
-							</li>
-							<li class="page_menu_item has-children">
-								<a href="#">Currency<i class="fa fa-angle-down"></i></a>
-								<ul class="page_menu_selection">
-									<li><a href="#">US Dollar<i class="fa fa-angle-down"></i></a></li>
-									<li><a href="#">EUR Euro<i class="fa fa-angle-down"></i></a></li>
-									<li><a href="#">GBP British Pound<i class="fa fa-angle-down"></i></a></li>
-									<li><a href="#">JPY Japanese Yen<i class="fa fa-angle-down"></i></a></li>
-								</ul>
-							</li>
-							<li class="page_menu_item">
-								<a href="#">Home<i class="fa fa-angle-down"></i></a>
-							</li>
-							<li class="page_menu_item has-children">
-								<a href="#">Super Deals<i class="fa fa-angle-down"></i></a>
-								<ul class="page_menu_selection">
-									<li><a href="#">Super Deals<i class="fa fa-angle-down"></i></a></li>
-									<li class="page_menu_item has-children">
-										<a href="#">Menu Item<i class="fa fa-angle-down"></i></a>
-										<ul class="page_menu_selection">
-											<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-											<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-											<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-											<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-										</ul>
-									</li>
-									<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-									<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-									<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-								</ul>
-							</li>
-							<li class="page_menu_item has-children">
-								<a href="#">Featured Brands<i class="fa fa-angle-down"></i></a>
-								<ul class="page_menu_selection">
-									<li><a href="#">Featured Brands<i class="fa fa-angle-down"></i></a></li>
-									<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-									<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-									<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-								</ul>
-							</li>
-							<li class="page_menu_item has-children">
-								<a href="#">Trending Styles<i class="fa fa-angle-down"></i></a>
-								<ul class="page_menu_selection">
-									<li><a href="#">Trending Styles<i class="fa fa-angle-down"></i></a></li>
-									<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-									<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-									<li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-								</ul>
-							</li>
-							<li class="page_menu_item"><a href="blog.html">blog<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item"><a href="contact.html">contact<i class="fa fa-angle-down"></i></a></li>
-						</ul>
-
-						<div class="menu_contact">
-							<div class="menu_contact_item">
-								<div class="menu_contact_icon"><img src="images/phone_white.png" alt=""></div>+38 068 005 3570
-							</div>
-							<div class="menu_contact_item">
-								<div class="menu_contact_icon"><img src="images/mail_white.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	</header>
 
-	<!-- Login popup start -->
 
-	<div id="DialogeBox" class="modal">
 
-		<!-- Modal content -->
+
+	<div id="myModal" class="modal">
 		<div class="modal-content">
 			<span class="close">&times;</span>
-			<div class="login-box">
-				<h1>Login</h1>
-				<p>Welcome to Shikshadhan Edutech </p>
-				<div class="input-field">
-					<input class="username" placeholder="User name">
-					<input class="password" placeholder="Password">
-				</div>
-				<button class="login-btn">Login</button>
+			<div class="modal-title">
+				<h2>Login</h2>
+				<p>Welcome to Shikshadhan Edu Tech</p>
+			</div>
+			<div class="login-input-field">
+				<input placeholder="Username">
+				<input placeholder="Password">
+			</div>
+			<div class="login-btn">
+				<button>login</button>
+				<p>Doesn’t have an account ? <a href="#">Register</a> </p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="global-container">
+
+	</div>
+
+
+
+	<footer>
+		<div class="footer transparent-card row">
+			<div class="col-md-6 col-sm-12 col-lg-4">
+				<h4>
+					Shikshadhan EduTech
+				</h4>
+				<p>Private LTD</p>
+			</div>
+			<div class="col-md-6 col-sm-12 col-lg-4">
+
+			</div>
+			<div class="col-md-6 col-sm-12 col-lg-4">
 
 			</div>
 		</div>
+	</footer>
 
-	</div>
 
-	<!-- Login popup end -->
 
-	</div>
+
+
+
+	<!-- Script for responsive header -->
 
 	<script>
-		// Get the modal
-		var modal = document.getElementById("DialogeBox");
+		// Get references to the menu icon and the header list
+		const menuIcon = document.getElementById('menu-icon');
+		const headerList = document.querySelector('.header-list');
 
-		// Get the button that opens the modal
-		var btn = document.getElementById("loginDialogBtn");
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks the button, open the modal 
-		btn.onclick = function() {
-			modal.style.display = "block";
-		}
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-			modal.style.display = "none";
-		}
-
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-			if (event.target == modal) {
-				modal.style.display = "none";
-			}
-		}
+		// Add click event listener to the menu icon
+		menuIcon.addEventListener('click', function() {
+			// Toggle the 'show' class on the header list
+			headerList.classList.toggle('show');
+		});
 	</script>
+
+	<!-- Script for responsive header -->
+
+	<!-- Script for Pop up -->
+
+	<script>
+		const profileIcon = document.getElementById('profile-icon');
+		const modal = document.getElementById('myModal');
+		const closeBtn = document.getElementsByClassName('close')[0];
+
+		profileIcon.addEventListener('click', function() {
+			modal.style.display = 'block';
+		});
+
+		closeBtn.addEventListener('click', function() {
+			modal.style.display = 'none';
+		});
+
+		window.addEventListener('click', function(event) {
+			if (event.target == modal) {
+				modal.style.display = 'none';
+			}
+		});
+	</script>
+
+
+	<!-- Script for Pop up -->
+
+
 </body>
 
 </html>

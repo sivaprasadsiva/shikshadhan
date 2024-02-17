@@ -1,79 +1,56 @@
-* {
-    font-family: sans-serif !important;
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.transparent-card {
+    box-shadow: 4px 4px 20px 0px #514949fc;
+    background-color: rgb(0 0 0 / 0%);
 }
 
 
-.global-container {
-    width: 100%;
-    /* padding: 20px; */
-}
+/* header start */
 
-.nav-list {
+.header-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style: none;
+    margin-bottom: 0px !important;
+    margin-top: 4px !important;
 }
-
-.nav-list-container {
-    padding: 10px 20px;
-    position: relative;
-}
-
 
 .header {
     padding: 20px;
-    box-shadow: 10px 10px 10px #00000045;
+    position: fixed;
+    top: 0;
+    width: -webkit-fill-available;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profile-icon {
+    font-size: 20px;
 }
 
 .menu-icon {
     display: none;
 }
 
-.profile-icon {
-    font-size: 24px;
+/* header end */
+
+
+.global-container {
+    height: 180vh;
 }
 
-.header-close-btn {
-    display: none;
-}
+/* Footer start */
 
-.hero-img-container {
-    height: 80vh;
-    width: 100%;
-
-
-    img {
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
-}
-
-.hero-card {
-    width: 40%;
-    position: absolute;
-    bottom: 20%;
-    left: 40px;
-    color: #fff;
-
-    h1 {
-        font-weight: 800;
-    }
-
-    p {
-        line-height: 2;
-        font-family: sans-serif;
-        padding-top: 20px;
-        font-weight: 400;
-    }
-}
-
-.hero-sec {
-    position: relative;
+footer {
+    position: sticky;
+    bottom: 0;
 }
 
 
 
+/* Footer end */
 
 
 
@@ -81,45 +58,39 @@
 
 
 
-@media (max-width:720px) {
-    .menu-icon {
-        display: block;
-    }
 
-    .header-title {
-        position: absolute;
-        left: 56px;
-        top: 14px;
-        font-size: 20px;
-    }
+@media(max-width:770px) {
 
-    .nav-list {
-        display: block;
-        line-height: 2.5;
-    }
-
-    .header-close-btn {
-        display: block;
-        text-align: end;
-        position: absolute;
-        right: 20px;
-        top: 0;
-        font-size: 28px;
-    }
+    /* header start */
 
     .header {
-        position: relative;
+
+        .menu-icon {
+            display: block;
+            color: black;
+            font-size: 20px;
+        }
+
+        h2 {
+            margin-left: 20px;
+        }
+
+        .responsive-header {
+            display: flex;
+        }
+
+        .header-list {
+            display: none;
+            text-align: center;
+            line-height: 2.5;
+        }
+
+        .show {
+            display: block !important;
+        }
+
+        /* header end */
+
     }
 
-    .menu.show {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-        line-height: 2.5;
-    }
-
-    .menu:not(.show) {
-        display: none;
-    }
 }
