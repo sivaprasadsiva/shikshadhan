@@ -23,7 +23,7 @@
 			</div>
 			<div class="col-md-8 col-sm-12 col-lg-7">
 				<ul class="header-list">
-					<li>Home </li>
+					<li><a href="{{ route('home') }}" style="text-decoration: none">Home </a></li>
 					<li><a href="{{ route('packages') }}">Courses </a></li>
 					<li>About Us </li>
 					<li>Contact us </li>

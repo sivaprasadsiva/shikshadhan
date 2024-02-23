@@ -13,11 +13,5 @@
         <i class="bi bi-plus-circle"></i></div>
 </div>
 @endforeach
-{{-- <div class="row box">
-    <p>Course 2</p>
-</div>
-<div class="row box">
-    <p>Course 2</p>
-</div> --}}
 
 @endsection

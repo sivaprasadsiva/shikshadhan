@@ -12,8 +12,7 @@
 
 	<!-- Include Bootstrap Icons CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/package.css')}}">
+    <link rel="stylesheet" href="{{asset('css/addon.css')}}">
 </head>
 <body>
     <header>
@@ -24,8 +23,8 @@
 			</div>
 			<div class="col-md-8 col-sm-12 col-lg-7">
 				<ul class="header-list">
-					<li><a href="{{ route('home') }}" style="text-decoration: none">Home</a></li>
-					<li>Courses </li>
+					<li><a href="{{ route('home') }}" style="text-decoration: none">Home </a></li>
+					<li><a href="{{ route('packages') }}">Courses </a></li>
 					<li>About Us </li>
 					<li>Contact us </li>
 					<li><i class="bi bi-person-circle profile-icon" id="profile-icon"></i></li>
@@ -33,12 +32,9 @@
 			</div>
 		</div>
 	</header>
+
     <div class="global-container">
-
-        @yield('package-content')
-
-
-
+        @yield('addonpage_content')
     </div>
 
 
@@ -60,31 +56,3 @@
 			</div>
 		</div>
 	</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script>
-		// Get references to the menu icon and the header list
-		const menuIcon = document.getElementById('menu-icon');
-		const headerList = document.querySelector('.header-list');
-
-		// Add click event listener to the menu icon
-		menuIcon.addEventListener('click', function() {
-			// Toggle the 'show' class on the header list
-			headerList.classList.toggle('show');
-		});
-	</script>
-
-</body>
-</html>

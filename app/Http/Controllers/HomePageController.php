@@ -10,7 +10,8 @@ class HomePageController
 {
     public function home()
     {
-        return view('index');
+        $courses = Package::select('packages.id AS pid', 'packages.p_name', 'packages.p_description', 'packages.p_price')->get();
+        return view('index', compact('courses'));
     }
 
     public function package() {
@@ -23,5 +24,9 @@ class HomePageController
 
     public function addons(){
         return view('addons');
+    }
+
+    public function addonpage(){
+        return view('addonpage');
     }
 }

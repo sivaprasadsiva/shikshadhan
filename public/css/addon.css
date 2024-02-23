@@ -84,13 +84,14 @@ body {
 .package-details{
     padding-left: 20px;
     font-family: 'jost';
-    font-size: 19px;
+    font-size: 17px;
+    height: 16vh;
 }
 
 .addon-box{
-    box-shadow:0px 1px 8px 5px rgba(0, 0, 0, 0.1) ;
+    box-shadow:0px 1px 8px 5px rgba(0, 0, 0, 0.1);
     width: 90%;
-    height: 5.6cm;
+    height: 6.5cm;
     margin-left: 30px;
 }
 .addon-box-header{
@@ -105,33 +106,26 @@ body {
     width:75%;
     height: 0.9cm;
     margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 6px;
     padding-top:6px ;
 }
 .addon-list{
     margin-top: 5px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 3cm;
+    height: 4.5cm;
+}
+.viewmore-btn{
+    text-align: right;
+    margin-right: 30px;
+    color: blue;
+    font-weight: 300;
+}
+.viewmore-btn a{
+    cursor: pointer;
+    text-decoration: none;
 }
 
 
-/* Scrollbar Styling */
-::-webkit-scrollbar {
-    width: 10px;
-}
 
-::-webkit-scrollbar-track {
-    background-color: #ebebeb;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: #6d6d6d;
-}
 .addon-btn{
     text-align: right;
     margin-top: 20px;
