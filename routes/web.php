@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomePageController::class,'home']);
+Route::get('/', [HomePageController::class,'home'])->name('home');
 
 Route::get('packages', [HomePageController::class,'package'])->name('packages');
 
@@ -25,3 +25,4 @@ Route::get('add-ons',[HomePageController::class, 'addons']);
 
 Route::get('/purchase/{id}/{package_name}', [PurchaseController::class, 'show'])->name('purchase');
 
+Route::get('addon',[HomePageController::class, 'addonpage'])->name('addonlist');

@@ -17,7 +17,7 @@
     </div>
     <div class="row">
     <div class="package-details">
-        <p>{{$package->p}}</p>
+        <p>{{$package->p_description}}</p>
         {{-- <p>A full stack developer course, with a special focus on the MEAN stack, 
             offers comprehensive knowledge and broad-level training on front-end, middleware,
             and back-end software development technologies.
@@ -27,24 +27,9 @@
     <div class="addon-box">
         <div class="addon-box-header"><p>Add On</p></div>
         <div class="addon-list">
-            {{-- <div class="row box">
-                <div class="col-lg-9">
-                <p>Course 1</p>
-                </div>
-                <div class="col-lg-2 price-box">
-                    <p>2000</p>
-                </div>
-                <div class="col-lg-1 add-btn">
-                    <i class="bi bi-plus-circle"></i></div>
-            </div>
-            <div class="row box">
-                <p>Course 2</p>
-            </div>
-            <div class="row box">
-                <p>Course 2</p>
-            </div> --}}
             @yield('addon_rows')
         </div>
+    <div class="viewmore-btn"><a href="{{route('addonlist')}}">View More>></a></div>
     </div>
 
     {{-- add on button --}}

@@ -211,6 +211,7 @@ body {
     border: solid 1px red;
     background-color: red;
     text-align: center;
+    color: white;
 }
 
 /* Package list  */
@@ -250,6 +251,9 @@ body {
         font-size: 19px;
 
 }
+.first-discover-btn{
+    margin-left: 20px;
+}
 
 
 
@@ -269,6 +273,12 @@ body {
     font-size: 19px;
 }
 
+.second-box-description{
+    height: 30vh;
+}
+.second-discover-btn{
+    margin-left: 20px;
+}
 
 /* Footer start */
 
