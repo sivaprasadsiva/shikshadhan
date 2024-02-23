@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\PurchaseController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomePageController::class,'home']);
+
+Route::get('packages', [HomePageController::class,'package'])->name('packages');
+
+
+Route::get('add-ons',[HomePageController::class, 'addons']);
+
+
+Route::get('/purchase/{id}/{package_name}', [PurchaseController::class, 'show'])->name('purchase');
+
